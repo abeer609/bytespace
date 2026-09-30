@@ -1,5 +1,4 @@
 import { ShoppingBag } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="px-8 h-30 flex justify-between items-center text-shuttle-gray-50">
       <div className="">
-        <img src="logo.png" className="w-[171px] h-[37px]" alt="" />
+        <img src="/images/logo.png" className="w-[171px] h-[37px]" alt="" />
       </div>
       <ul className="flex gap-4">
         {links.map((link) => (

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main className="text-shuttle-gray-50 mt-12">
       <div className="space-y-8 px-4 max-w-5xl mx-auto">
-        <h1 className="text-heading-m lg:text-heading-l font-bold text-center leading-[120%]">
+        <h1 className="text-heading-m font-poppins lg:text-heading-l font-bold text-center leading-[120%]">
           Get Access to Hundreds Courses Available
         </h1>
         <p className="text-center text-base">
@@ -25,7 +25,7 @@ const Hero = () => {
           <input
             type="text"
             placeholder="Course, topic, creator"
-            className="py-3 pe-6 w-115 bg-white placeholder:shadow-shuttle-gray-400 text-base  text-shuttle-gray-400 outline-0 focus:outline-shuttle-gray-200 rounded-tr-3xl rounded-br-3xl group-focus:outline-2"
+            className="py-3 pe-6 max-w-115 bg-white placeholder:shadow-shuttle-gray-400 text-base  text-shuttle-gray-400 outline-0 focus:outline-shuttle-gray-200 rounded-tr-3xl rounded-br-3xl group-focus:outline-2"
           />
         </div>
         <button className="py-3 px-6 bg-electric-lime-400 text-shuttle-gray-950 text-lg font-medium rounded-full cursor-pointer hover:bg-electric-lime-500">
@@ -55,8 +55,12 @@ const Hero = () => {
         <StudentsCard className="absolute bottom-20 left-50 z-20" />
 
         <div className="border-electric-lime-400 bg-transparent border-250 h-285 w-full top-30 rounded-full absolute"></div>
-        <div className="flex justify-center relative z-10 left-15">
-          <img src="/images/hero-banner.png" alt="" className="" />
+        <div className="flex justify-center relative z-10 left-10">
+          <img
+            src="/images/hero-banner.png"
+            alt=""
+            className="max-w-180 w-full"
+          />
         </div>
         {/* <div className="bg-electric-lime-400 aspect-square w-[120%] md:h-285 md:w-285 absolute top-20 rounded-full transform -translate-x-1/2 left-1/2"></div> */}
       </div>

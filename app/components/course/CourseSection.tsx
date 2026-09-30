@@ -4,6 +4,7 @@ import CourseGrid from "./CourseGrid";
 // import CategoryFilter from "./CategoryFilter";
 import { useEffect, useState } from "react";
 import CategoryFilter from "./CategoryFilter";
+import CourseNotFound from "./CourseNotFound";
 
 export default function CoursesSection() {
   const [active, setActive] = useState("");
@@ -54,14 +55,15 @@ export default function CoursesSection() {
         "Crafts",
         "Creative Marketing",
         "Digital Illustration",
+        "Animation",
       ],
     },
     {
       ...base,
       id: "big-data",
-      title: "the Power of Big Data",
+      title: "The Power of Big Data",
       image: "/images/courses/bigdata.png",
-      categories: ["Data Science", "Featured"],
+      categories: ["Data Science", "Featured", "Web Development"],
     },
     {
       ...base,
@@ -75,14 +77,20 @@ export default function CoursesSection() {
       id: "money",
       title: "Mastering Money Management",
       image: "/images/courses/money.png",
-      categories: ["Social Media", "Productivity"],
+      categories: ["Social Media", "Productivity", "Marketing"],
     },
     {
       ...base,
       id: "startup",
       title: "From Idea to Startup Success",
       image: "/images/courses/startup.png",
-      categories: ["Music", "Cooking", "Photography", "Film & Video"],
+      categories: [
+        "Music",
+        "Cooking",
+        "Photography",
+        "Film & Video",
+        "Marketing",
+      ],
     },
   ]);
 
@@ -134,7 +142,12 @@ export default function CoursesSection() {
         active={active}
         onChange={setActive}
       />
-      <CourseGrid courses={filteredCourses} />
+
+      {filteredCourses.length > 0 ? (
+        <CourseGrid courses={filteredCourses} />
+      ) : (
+        <CourseNotFound />
+      )}
     </section>
   );
 }

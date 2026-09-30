@@ -6,10 +6,10 @@ export default function CategoryPill({ label, active, onClick }: Props) {
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`rounded-full px-[14px] py-[10px] text-[15px] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 ${
+      className={`rounded-full font-medium px-4 py-3 transition-colors focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-blue-500 ${
         active
-          ? "bg-lime-300 font-medium text-slate-900"
-          : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+          ? "bg-electric-lime-400 font-medium text-slate-900"
+          : "bg-shuttle-gray-50 text-shuttle-gray-700 hover:bg-shuttle-gray-100"
       }`}
     >
       {label}

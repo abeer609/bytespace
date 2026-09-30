@@ -31,7 +31,7 @@ export default function CategoryFilter({
       ))}
       <button
         type="button"
-        className="px-2 text-[15px] font-medium text-blue-600 hover:underline"
+        className="px-2 text-[15px] font-medium text-persian-blue-800 hover:underline"
       >
         + More
       </button>

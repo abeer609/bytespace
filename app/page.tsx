@@ -6,6 +6,7 @@ import LearningCategories from "./components/LearningArea";
 import FeaturesSection from "./components/feature-section/FeatureSection";
 import CreatorCtaSection from "./components/CreatorSection";
 import TestimonialsSection from "./components/testimonial-section/TestiMonialSection";
+import Footer from "./components/footer-section/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <FeaturesSection />
       <CreatorCtaSection />
       <TestimonialsSection />
+      <Footer />
     </>
   );
 }

@@ -52,7 +52,7 @@ export default function LoginCard() {
         </button>
       </div>
 
-      <p className="mt-auto pt-16 text-center text-xl text-slate-600">
+      <p className="mt-auto pt-16 text-center text-base text-slate-600">
         <>
           New user?{" "}
           <Link

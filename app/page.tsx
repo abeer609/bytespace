@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import CoursesSection from "./components/course/CourseSection";
 import LearningCategories from "./components/LearningArea";
+import FeaturesSection from "./components/feature-section/FeatureSection";
+import CreatorCtaSection from "./components/CreatorSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Partners />
       <CoursesSection />
       <LearningCategories />
+      <FeaturesSection />
+      <CreatorCtaSection />
     </>
   );
 }

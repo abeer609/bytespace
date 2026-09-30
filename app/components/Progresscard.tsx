@@ -6,10 +6,8 @@ export default function ProgressCard({
   className?: string;
 }) {
   return (
-    <div
-      className={`w-[232px] rounded-2xl bg-white p-4 shadow-lg ${className}`}
-    >
-      <p className="text-xs text-slate-700">Learning Progress</p>
+    <div className={`w-58 rounded-2xl bg-white p-4 shadow-lg ${className}`}>
+      <p className="text-sm font-medium text-slate-700">Learning Progress</p>
       <p className="mt-2 text-5xl font-semibold text-slate-900">{value}%</p>
       <div className="mt-3">
         <div

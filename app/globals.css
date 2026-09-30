@@ -24,3 +24,7 @@
   --text-heading-s: 36px;
   --text-heading-xs: 20px;
 }
+
+.bg-grid {
+  background-image: url("/images/bg.png");
+}

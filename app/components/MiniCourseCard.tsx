@@ -1,23 +1,34 @@
+import { cn } from "../lib/utils";
 import CourseMeta from "./course/CourseMeta";
 import LevelBadge from "./LevelBadge";
 
-export default function MiniCourseCard() {
+type Props = {
+  title?: string;
+  image?: string;
+  className?: string;
+};
+
+export default function MiniCourseCard({
+  title = "Learn Figma from Basic",
+  image = "images/courses/figma.png",
+  className,
+}: Props) {
   return (
-    <article className="w-85 rounded-3xl border border-slate-200 bg-white p-3.5">
+    <article
+      className={cn(
+        "w-85 rounded-3xl border border-slate-200 bg-white p-3.5",
+        className,
+      )}
+    >
       <div className="relative h-45 overflow-hidden rounded-2xl bg-slate-100">
-        <img
-          src="images/courses/figma.png"
-          alt=""
-          className="h-full w-full object-cover"
-        />
+        <img src={image} alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-x-3 bottom-3 flex gap-2">
           <CourseMeta>17 Lessons</CourseMeta>
           <CourseMeta>2 hours 16 mins</CourseMeta>
+          <CourseMeta>59 comments</CourseMeta>
         </div>
       </div>
-      <h3 className="mt-4 text-lg font-semibold text-slate-900">
-        Learn Figma from Basic
-      </h3>
+      <h3 className="mt-4 text-lg font-semibold text-slate-900">{title}</h3>
       <p className="mt-1 text-xs text-slate-500">
         by <span className="text-blue-600">purepearl studio</span>
       </p>

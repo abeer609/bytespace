@@ -1,10 +1,11 @@
+import { cn } from "../lib/utils";
 import AvatarStack from "./AvatarStack";
 
 const avatars = [1, 2, 3, 4, 5, 6].map((n) => `/images/avatars/${n}.png`);
 
 export default function StudentsCard({ className }: { className?: string }) {
   return (
-    <div className={`rounded-2xl bg-white p-4 shadow-lg ${className}`}>
+    <div className={cn("rounded-2xl bg-white p-4 shadow-lg", className)}>
       <p className="font-medium text-slate-800">Happy Students</p>
       <p className="mt-0.5 flex items-center gap-1 text-[10px] text-slate-600">
         4.5 <span className="text-slate-400">(240)</span>

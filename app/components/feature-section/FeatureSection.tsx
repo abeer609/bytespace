@@ -62,34 +62,33 @@ export default function FeaturesSection() {
 
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
           <div>
-            <div className="relative mx-auto h-130 w-full max-w-140">
+            <div className="relative mx-auto  w-full max-w-140">
               <img
                 src="/images/hero-girl.png"
                 alt="Smiling course creator wearing a headset and holding a tablet"
-                className="absolute bottom-0 left-[60px] top-0 w-full drop-shadow-2xl z-10"
+                className=" bottom-0 left-[60px] top-0 w-full drop-shadow-2xl z-10"
               />
               <MetricCard
-                className="absolute left-0 top-0 w-[230px]"
+                className="absolute left-0 top-0 w-[230px] -z-10"
                 label="Total Revenue"
                 period="July 1-28"
                 value="$120.29"
                 progress={50}
               />
               <MetricCard
-                className="absolute left-0 top-[145px]"
+                className="absolute left-0 top-[145px] -z-10"
                 label="Year to Date"
                 period="2023"
                 value="$1,200.38"
                 badge="+12$"
               />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/shapes/spring-green.svg"
                 alt=""
                 aria-hidden
                 className="absolute right-0 top-0 w-54 z-40"
               />
-              <div className="absolute bottom-[60px] right-0 z-20">
+              <div className="absolute bottom-40 right-10 z-20">
                 <StudentsCard />
               </div>
             </div>

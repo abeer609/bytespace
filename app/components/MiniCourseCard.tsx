@@ -5,7 +5,6 @@ export default function MiniCourseCard() {
   return (
     <article className="w-85 rounded-3xl border border-slate-200 bg-white p-3.5">
       <div className="relative h-45 overflow-hidden rounded-2xl bg-slate-100">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="images/courses/figma.png"
           alt=""

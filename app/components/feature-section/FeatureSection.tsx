@@ -36,7 +36,10 @@ export default function FeaturesSection() {
             </p>
             <StatsRow stats={growthStats} />
           </div>
-          <div>
+          <div className="md:hidden">
+            <img src="/images/feature-1.png" alt="" />
+          </div>
+          <div className="hidden md:block">
             <div className="relative mx-auto h-[520px] w-full max-w-[560px]">
               <div className="absolute left-0 top-0">
                 <MiniCourseCard />
@@ -61,7 +64,10 @@ export default function FeaturesSection() {
         </div>
 
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
-          <div>
+          <div className="md:hidden">
+            <img src="/images/feature-2.png" alt="" />
+          </div>
+          <div className="hidden md:block">
             <div className="relative mx-auto  w-full max-w-140">
               <img
                 src="/images/hero-girl.png"

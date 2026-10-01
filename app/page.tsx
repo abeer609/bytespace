@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <header className="bg-grid bg-persian-blue-800 relative overflow-hidden">
-        <Navbar />
         <Hero />
       </header>
       <Partners />
@@ -21,7 +20,6 @@ export default function Home() {
       <FeaturesSection />
       <CreatorCtaSection />
       <TestimonialsSection />
-      <Footer />
     </>
   );
 }
